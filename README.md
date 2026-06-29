@@ -1,211 +1,198 @@
-# 📚 E-Library
+# 📚 E-Library - UAS Pemrograman Web 2
 
-E-Library adalah aplikasi perpustakaan berbasis **Web** yang dibangun menggunakan **CodeIgniter 4** sebagai Backend REST API dan **HTML, CSS, JavaScript (Vanilla JS)** sebagai Frontend.
+## 👤 Identitas Mahasiswa
 
-Aplikasi ini menerapkan konsep **Single Page Application (SPA)** dengan komunikasi menggunakan REST API dan autentikasi berbasis Token.
-
----
-
-# 🚀 Fitur
-
-* Login Admin
-* Dashboard
-* Manajemen Kategori
-* Manajemen Buku
-* Manajemen Penulis
-* Manajemen Anggota
-* CRUD Data (Create, Read, Update, Delete)
-* REST API
-* Responsive Design
-* Modern Dashboard UI
+- **Nama** : Novellysna Nurziska
+- **NIM** : 312410131
+- **Kelas** : I241A
+- **Mata Kuliah** : Pemrograman Web 2
+- **Dosen Pengampu** : Agung Nugroho, S.Kom., M.Kom.
 
 ---
 
-# 🛠 Teknologi
+# 📖 Deskripsi Project
 
-### Backend
+E-Library merupakan aplikasi perpustakaan berbasis **Single Page Application (SPA)** yang dibangun menggunakan **HTML, CSS, Bootstrap, JavaScript, PHP, MySQL**, dan **REST API**.
 
-* PHP 8
-* CodeIgniter 4
-* MySQL
-* REST API
+Aplikasi ini memudahkan admin dalam mengelola data perpustakaan melalui fitur **CRUD (Create, Read, Update, Delete)** pada data **Kategori, Penulis, Anggota,** dan **Buku**. Sistem juga telah menerapkan autentikasi menggunakan **JWT (JSON Web Token)**.
 
-### Frontend
+---
 
-* HTML5
-* CSS3
-* Bootstrap 5
-* Bootstrap Icons
-* JavaScript (ES6)
+# 🎯 Tujuan Project
 
-### Database
+Project ini dibuat sebagai salah satu syarat untuk memenuhi tugas **Ujian Akhir Semester (UAS)** Mata Kuliah **Pemrograman Web 2**.
 
-* MySQL
-* phpMyAdmin
+---
+
+# ✨ Fitur Aplikasi
+
+- 🔐 Login Admin
+- 📊 Dashboard
+- 📁 Manajemen Kategori
+- 👤 Manajemen Penulis
+- 👥 Manajemen Anggota
+- 📚 Manajemen Buku
+- ➕ Tambah Data
+- ✏️ Edit Data
+- 🗑️ Hapus Data
+- 🚪 Logout
+
+---
+
+# 📸 Tampilan Aplikasi
+
+## 🔐 Login
+
+<img width="1362" height="717" alt="login" src="https://github.com/user-attachments/assets/e69fb001-b33a-40cf-982e-e71392e57706" />
+
+---
+
+## 📊 Dashboard
+
+<img width="1362" height="720" alt="dashboard" src="https://github.com/user-attachments/assets/5c2a5da1-c939-4059-b8fb-07e59f60a675" />
+
+---
+
+## 📁 Data Kategori
+
+<img width="1362" height="717" alt="kategori" src="https://github.com/user-attachments/assets/80bf8f92-700e-473a-818d-8aac94fe3a58" />
+
+---
+
+## 📚 Data Buku
+
+<img width="1362" height="717" alt="buku" src="https://github.com/user-attachments/assets/a8126fd9-be50-4d54-aec0-a597fb86bd27" />
+
+---
+
+## 👤 Data Penulis
+
+<img width="1362" height="720" alt="penulis" src="https://github.com/user-attachments/assets/25effed8-4a94-4fac-89e6-91f91375c1bc" />
+
+---
+
+## 👥 Data Anggota
+
+<img width="1362" height="717" alt="anggota" src="https://github.com/user-attachments/assets/ad233fb7-9269-4da2-9f90-2052f973b3d6" />
+
+---
+
+# 🛠️ Teknologi yang Digunakan
+
+## Frontend
+
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript (Vanilla JS)
+
+## Backend
+
+- PHP
+- REST API
+- JWT Authentication
+
+## Database
+
+- MySQL
+
+## Tools
+
+- Visual Studio Code
+- XAMPP
+- phpMyAdmin
+- Git
+- GitHub
 
 ---
 
 # 📂 Struktur Project
 
-```
-elibrary/
-
+```text
+UAS/
 │
 ├── backend/
-│   ├── app/
-│   ├── public/
-│   └── .env
+│   ├── api/
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   └── vendor/
 │
 ├── frontend/
 │   ├── assets/
 │   │   ├── css/
-│   │   └── js/
+│   │   ├── js/
+│   │   └── images/
 │   │
 │   ├── pages/
-│   │   ├── dashboard.html
-│   │   ├── kategori.html
-│   │   ├── buku.html
-│   │   ├── penulis.html
-│   │   └── anggota.html
-│   │
-│   └── login.html
+│   ├── login.html
+│   └── index.html
 │
-└── database/
-    └── db_elibrary.sql
+├── database/
+│   └── elibrary.sql
+│
+└── README.md
 ```
 
 ---
 
-# ⚙ Cara Menjalankan
+# 🚀 Cara Menjalankan Project
 
-## 1. Clone Repository
+1. Install **XAMPP**.
+2. Jalankan **Apache** dan **MySQL**.
+3. Import database **elibrary.sql** menggunakan **phpMyAdmin**.
+4. Letakkan project pada folder:
 
+```text
+C:\xampp\htdocs\UAS
 ```
-git clone https://github.com/username/elibrary.git
+
+5. Jalankan backend.
+6. Buka browser.
+7. Akses halaman login melalui alamat berikut:
+
+```text
+http://localhost/UAS/frontend/login.html
 ```
+
+8. Login menggunakan akun admin yang tersedia pada database.
 
 ---
 
-## 2. Import Database
+# 🔑 Login
 
-Buka phpMyAdmin
+| Username | Password |
+|----------|----------|
+| admin | admin |
 
-Buat database
-
-```
-db_elibrary
-```
-
-Import file
-
-```
-db_elibrary.sql
-```
+> **Catatan:** Username dan password dapat disesuaikan dengan data pada database.
 
 ---
 
-## 3. Konfigurasi Backend
+# 🔗 Link Repository
 
-Edit file
+Repository GitHub:
 
-```
-backend/.env
-```
-
-Ubah konfigurasi database
-
-```
-database.default.hostname = localhost
-database.default.database = db_elibrary
-database.default.username = root
-database.default.password =
-database.default.DBDriver = MySQLi
-database.default.port = 3306
-```
+**https://github.com/veyylisnanurziska-bit/UAS**
 
 ---
 
-## 4. Jalankan Backend
+# 🎥 Link Video Presentasi
 
-Masuk ke folder backend
-
-```
-cd backend
-```
-
-Kemudian jalankan
-
-```
-php spark serve
-```
-
-Server berjalan di
-
-```
-http://localhost:8080
-```
+**https://youtu.be/U8RWutbKRBA?si=5ADzrrS-KrlmJxcj**
 
 ---
 
-## 5. Jalankan Frontend
+# 👩‍💻 Dibuat Oleh
 
-Buka folder frontend menggunakan Live Server atau web server.
+**Novellysna Nurziska**
 
-Contoh:
-
-```
-http://localhost/frontend/login.html
-```
+- NIM : 312410131
+- Kelas : I241A
+- Program Studi : Teknik Informatika
 
 ---
 
-# 🔐 Login
+# 📄 Lisensi
 
-Masukkan akun admin yang terdapat pada database.
-
-Contoh:
-
-Username
-
-```
-admin
-```
-
-Password
-
-```
-admin
-```
-
-(Sesuaikan dengan data pada tabel admin.)
-
----
-
-# 📸 Tampilan
-
-* Login
-<img width="1362" height="717" alt="login" src="https://github.com/user-attachments/assets/e69fb001-b33a-40cf-982e-e71392e57706" />
-
-* Dashboard
-<img width="1362" height="720" alt="image" src="https://github.com/user-attachments/assets/5c2a5da1-c939-4059-b8fb-07e59f60a675" />
-
-* Data Kategori
-<img width="1362" height="717" alt="image" src="https://github.com/user-attachments/assets/80bf8f92-700e-473a-818d-8aac94fe3a58" />
-
-* Data Buku
-<img width="1362" height="717" alt="buku" src="https://github.com/user-attachments/assets/a8126fd9-be50-4d54-aec0-a597fb86bd27" />
-* Data Penulis
-<img width="1362" height="720" alt="penulis" src="https://github.com/user-attachments/assets/25effed8-4a94-4fac-89e6-91f91375c1bc" />
-* Data Anggota
-<img width="1362" height="717" alt="anggota" src="https://github.com/user-attachments/assets/ad233fb7-9269-4da2-9f90-2052f973b3d6" />
----
-
-# 👨‍💻 Author
-
-Nama : (Nama Kamu)
-
-Program Studi : Teknik Informatika
-
-Universitas : (Nama Universitas)
-
-Tahun : 2025
+Project ini dibuat untuk memenuhi tugas **Ujian Akhir Semester (UAS)** Mata Kuliah **Pemrograman Web 2** di bawah bimbingan **Agung Nugroho, S.Kom., M.Kom.**
