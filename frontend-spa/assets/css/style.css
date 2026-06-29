@@ -1,0 +1,555 @@
+/* ======================================================
+   GOOGLE FONT
+====================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+
+    --primary:#EC4899;
+    --primary2:#F472B6;
+    --bg:#FFF7FB;
+    --card:#FFFFFF;
+    --purple:#F3E8FF;
+    --text:#5B4560;
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+
+body{
+
+    background:var(--bg);
+
+}
+
+/* ======================================================
+   LAYOUT
+====================================================== */
+
+.wrapper{
+
+    display:flex;
+    min-height:100vh;
+
+}
+
+.content{
+
+    flex:1;
+    padding:35px;
+
+}
+
+/* ======================================================
+   SIDEBAR
+====================================================== */
+
+.sidebar{
+
+    width:260px;
+
+    background:white;
+
+    padding:30px 20px;
+
+    box-shadow:var(--shadow);
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+    margin-bottom:40px;
+
+    text-align:center;
+
+}
+
+.sidebar nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.sidebar .nav-link{
+
+    color:#777;
+
+    text-decoration:none;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    display:flex;
+
+    gap:12px;
+
+    align-items:center;
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+.sidebar .nav-link:hover{
+
+    background:#FCE7F3;
+
+    color:var(--primary);
+
+}
+
+.sidebar .active{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary2)
+    );
+
+    color:white !important;
+
+}
+
+/* ======================================================
+   LOGOUT
+====================================================== */
+
+.logout-btn{
+
+    margin-top:auto;
+
+    border:none;
+
+    background:#F43F5E;
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+}
+
+.logout-btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ======================================================
+   TITLE
+====================================================== */
+
+.welcome{
+
+    font-weight:700;
+
+    color:#444;
+
+}
+
+#username{
+
+    color:#999;
+
+    margin-bottom:30px;
+
+}
+
+/* ======================================================
+   DASHBOARD CARD
+====================================================== */
+
+.card-stat{
+
+    background:var(--card);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.card-stat:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card-stat .icon{
+
+    width:75px;
+
+    height:75px;
+
+    background:var(--purple);
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+    font-size:30px;
+
+    color:var(--primary);
+
+}
+
+.card-stat .number{
+
+    font-size:40px;
+
+    font-weight:700;
+
+    margin-top:20px;
+
+    color:#444;
+
+}
+
+.card-stat .label{
+
+    color:#999;
+
+}
+
+
+/* ======================================================
+   BUTTON
+====================================================== */
+
+.btn-primary{
+
+    background:#EC4899;
+    border:none;
+    border-radius:12px;
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:#DB2777;
+    transform:translateY(-2px);
+
+}
+
+.btn-warning{
+
+    color:white;
+
+}
+
+.btn{
+
+    border-radius:12px;
+
+}
+
+/* ======================================================
+   MODAL
+====================================================== */
+
+.modal-content{
+
+    border:none;
+
+    border-radius:25px;
+
+}
+
+.modal-header{
+
+    background:#FCE7F3;
+
+}
+
+.modal-title{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+/* ======================================================
+   INPUT
+====================================================== */
+
+.form-control,
+.form-select{
+
+    border-radius:12px;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 .25rem rgba(236,72,153,.25);
+
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media(max-width:768px){
+
+.wrapper{
+
+    flex-direction:column;
+
+}
+
+.sidebar{
+
+    width:100%;
+
+}
+
+.badge{
+
+font-size:14px;
+
+font-weight:500;
+
+padding:10px 15px;
+
+}
+
+.table tbody tr{
+
+transition:.3s;
+
+}
+
+.table tbody tr:hover{
+
+background:#FFF5FA;
+
+}
+
+.table td{
+
+padding:18px;
+
+}
+
+.btn-sm{
+
+width:40px;
+
+height:40px;
+
+border-radius:12px;
+
+padding:0;
+
+}
+
+.btn-warning{
+
+background:#F59E0B;
+
+border:none;
+
+}
+
+.btn-danger{
+
+background:#F43F5E;
+
+border:none;
+
+}
+
+.btn-warning:hover{
+
+background:#D97706;
+
+}
+
+.btn-danger:hover{
+
+background:#E11D48;
+
+}
+
+/* ================= Modal ================= */
+
+.modal-content{
+
+    border-radius:20px;
+
+}
+
+.modal-header{
+
+    background:#FFF5F8;
+
+}
+
+.modal-title{
+
+    color:#6C3A6D;
+    font-weight:700;
+
+}
+
+.form-control{
+
+    border-radius:12px;
+
+}
+
+.form-control:focus{
+
+    border-color:#F4A6C3;
+    box-shadow:0 0 0 .25rem rgba(244,166,195,.25);
+
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+.table{
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+}
+
+.table thead{
+
+    background:#FFF0F6;
+
+}
+
+.table thead th{
+
+    color:#6C3A6D;
+    font-weight:600;
+    border:none;
+    padding:16px;
+
+}
+
+.table tbody td{
+
+    vertical-align:middle;
+    padding:16px;
+    border-top:1px solid #F3F4F6;
+
+}
+
+.table tbody tr{
+
+    transition:.25s;
+
+}
+
+.table tbody tr:hover{
+
+    background:#FFF8FB;
+
+}
+
+.table tbody tr:last-child td{
+
+    border-bottom:none;
+
+}
+
+/* ===========================
+   BADGE KATEGORI
+=========================== */
+
+.badge{
+
+    font-size:14px;
+    font-weight:500;
+    padding:10px 16px;
+    border-radius:30px;
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+
+    border:none;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+
+}
+
+/* ===========================
+   TABLE PENULIS
+=========================== */
+
+#dataPenulis td{
+    vertical-align: middle;
+}
+
+#dataPenulis .badge{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 14px;
+}
+
+#dataPenulis .btn{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 12px;
+}
+
+#dataPenulis .btn i{
+    font-size: 16px;
+}
+
+}

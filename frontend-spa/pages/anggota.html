@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Data Anggota</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="../assets/css/style.css">
+
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        📚 E-Library
+
+    </div>
+
+    <nav>
+
+        <a href="dashboard.html" class="nav-link">
+
+            <i class="bi bi-house-door-fill"></i>
+
+            Dashboard
+
+        </a>
+
+        <a href="kategori.html" class="nav-link">
+
+            <i class="bi bi-tags-fill"></i>
+
+            Kategori
+
+        </a>
+
+        <a href="penulis.html" class="nav-link">
+
+            <i class="bi bi-person-fill"></i>
+
+            Penulis
+
+        </a>
+
+        <a href="anggota.html" class="nav-link active">
+
+            <i class="bi bi-people-fill"></i>
+
+            Anggota
+
+        </a>
+
+        <a href="buku.html" class="nav-link">
+
+            <i class="bi bi-book-fill"></i>
+
+            Buku
+
+        </a>
+
+    </nav>
+
+    <button id="logoutBtn" class="logout-btn">
+
+        <i class="bi bi-box-arrow-right"></i>
+
+        Logout
+
+    </button>
+
+</aside>
+
+<!-- ================= CONTENT ================= -->
+
+<main class="content">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <div>
+
+            <h2 class="welcome">
+
+                👥 Data Anggota
+
+            </h2>
+
+            <p class="text-muted">
+
+                Kelola seluruh data anggota perpustakaan.
+
+            </p>
+
+        </div>
+
+        <button
+            class="btn btn-primary px-4 py-2 shadow-sm"
+            id="btnTambah">
+
+            <i class="bi bi-plus-circle-fill"></i>
+
+            Tambah Anggota
+
+        </button>
+
+    </div>
+
+    <div class="card shadow-sm">
+
+        <div class="card-body">
+
+            <div class="table-responsive">
+
+                <table class="table align-middle">
+
+                    <thead class="table-light">
+
+                        <tr>
+
+                            <th width="70">No</th>
+
+                            <th><i class="bi bi-person-fill text-primary"></i> Nama</th>
+
+                            <th><i class="bi bi-envelope-fill text-primary"></i> Email</th>
+
+                            <th><i class="bi bi-telephone-fill text-primary"></i> No HP</th>
+
+                            <th width="180" class="text-center">
+
+                                <i class="bi bi-gear-fill text-primary"></i>
+
+                                Aksi
+
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="dataAnggota">
+
+                        <tr>
+
+                            <td colspan="5" class="text-center py-5">
+
+                                Loading...
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+</div>
+
+<!-- ================= MODAL ================= -->
+
+<div class="modal fade" id="modalAnggota">
+
+
+<div class="modal-dialog modal-dialog-centered">
+
+    <div class="modal-content border-0 shadow-lg rounded-4">
+
+        <div class="modal-header border-0">
+
+            <h5 class="modal-title" id="judulModal">
+
+                Tambah Anggota
+
+            </h5>
+
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+
+        </div>
+
+        <div class="modal-body">
+
+            <input type="hidden" id="idAnggota">
+
+            <div class="mb-3">
+
+                <label class="form-label fw-semibold">
+
+                    Nama
+
+                </label>
+
+                <input
+                    type="text"
+                    id="nama"
+                    class="form-control"
+                    placeholder="Masukkan nama anggota">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label fw-semibold">
+
+                    Email
+
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Masukkan email">
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label fw-semibold">
+
+                    Nomor HP
+
+                </label>
+
+                <input
+                    type="text"
+                    id="nohp"
+                    class="form-control"
+                    placeholder="Masukkan nomor HP">
+
+            </div>
+
+        </div>
+
+        <div class="modal-footer">
+
+            <button
+                class="btn btn-light border"
+                data-bs-dismiss="modal">
+
+                <i class="bi bi-x-circle"></i>
+
+                Batal
+
+            </button>
+
+            <button
+                class="btn btn-success px-4"
+                id="btnSimpan">
+
+                <i class="bi bi-check-circle"></i>
+
+                Simpan
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="../assets/js/config.js"></script>
+
+<script src="../assets/js/logout.js"></script>
+
+<script src="../assets/js/anggota.js"></script>
+
+</body>
+</html>
