@@ -193,11 +193,11 @@ admin
 <img width="1362" height="717" alt="image" src="https://github.com/user-attachments/assets/80bf8f92-700e-473a-818d-8aac94fe3a58" />
 
 * Data Buku
-
+<img width="1362" height="717" alt="buku" src="https://github.com/user-attachments/assets/a8126fd9-be50-4d54-aec0-a597fb86bd27" />
 * Data Penulis
-  
+<img width="1362" height="720" alt="penulis" src="https://github.com/user-attachments/assets/25effed8-4a94-4fac-89e6-91f91375c1bc" />
 * Data Anggota
-
+<img width="1362" height="717" alt="anggota" src="https://github.com/user-attachments/assets/ad233fb7-9269-4da2-9f90-2052f973b3d6" />
 ---
 
 # 👨‍💻 Author
