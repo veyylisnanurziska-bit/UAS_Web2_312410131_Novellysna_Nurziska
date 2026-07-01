@@ -171,11 +171,11 @@ http://localhost/UAS/frontend/login.html
 
 # 🔗 Link Repository
 
-Repository GitHub:
+## Repository GitHub:
 
 **https://github.com/veyylisnanurziska-bit/UAS**
 
-## Repository Praktikum Pemrograman Web 2
+## Praktikum Pemrograman Web 2
 
 https://github.com/Novellysna/lab7_web
 
